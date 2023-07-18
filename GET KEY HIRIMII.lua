@@ -122,6 +122,14 @@ TextButton.FontFace = Font.new([[rbxasset://fonts/families/ComicNeueAngular.json
 TextButton.Text = "GET KEY"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 20.000
+TextButton.MouseButton1Down:Connect(function()
+  setclipboard("https://link-hub.net/891630/key-system-hirimii-hub")
+  game.StarterGui:SetCore("SendNotification", {
+        Icon = "rbxassetid://13918363155";
+        Title = "Hirimi Hub", 
+        Text = "Copied!";
+  })
+end)
 
 TextButton_2.Parent = Frame
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -137,7 +145,18 @@ TextButton_2.MouseButton1Down:Connect(function()
   if TextBox.Text == keylind then
     Frame.Visible = false
     wait(0.5)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hirimii/ScriptBF/main/Loader.lua'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Inforedmc1346/source-code/main/code.lua"))()
+    game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://13918363155";
+          Title = "Hirimi Hub", 
+          Text = "Invalid Key!";
+    })
+  else
+    game.StarterGui:SetCore("SendNotification", {
+          Icon = "rbxassetid://13918363155";
+          Title = "Hirimi Hub", 
+          Text = "Invalid Key!";
+    })
     end
 end)
 
@@ -158,3 +177,11 @@ TextButton_3.FontFace = Font.new([[rbxasset://fonts/families/ComicNeueAngular.js
 TextButton_3.Text = "COPY LINK DISCORD"
 TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.TextSize = 20.000
+TextButton_3.MouseButton1Down:Connect(function()
+  setclipboard("https://discord.gg/rUKWhEJHf2")
+  game.StarterGui:SetCore("SendNotification", {
+        Icon = "rbxassetid://13918363155";
+        Title = "Hirimi Hub", 
+        Text = "Copied!";
+  })
+end)
