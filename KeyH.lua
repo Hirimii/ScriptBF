@@ -1,2 +1,2 @@
-local KeyH = "HIRIMI-O95BJJlM662"
+local KeyH = "HIRIMI-BBJ7726266262K"
 return KeyH
