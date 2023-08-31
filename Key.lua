@@ -1,2 +1,2 @@
-local key = "HIRIMI-LMMS66172LA"
+local key = "HIRIMI-ZZMALA661HIRI"
 return key
